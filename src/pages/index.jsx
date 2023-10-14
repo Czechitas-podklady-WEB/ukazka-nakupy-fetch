@@ -16,6 +16,8 @@ const HomePage = () => (
         <input id="input-name" type="text" />
         <label htmlFor="input-amount">Množství</label>
         <input id="input-amount" type="text" />
+        <label htmlFor="input-amount">Jednotka</label>
+        <input id="input-unit" type="text" />
         <button className="btn-add">Přidat</button>
       </form>
       <div className="shoplist">
