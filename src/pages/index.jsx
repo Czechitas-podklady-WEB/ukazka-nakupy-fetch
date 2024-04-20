@@ -3,9 +3,15 @@ import { ShopItem } from '../components/ShopItem';
 import '../global.css';
 import './index.css';
 
-const response = await fetch('https://nakupy.kodim.app/api/sampleweek/mon');
-const data = await response.json();
-const list = data.result.items;
+//TODO nezapomeňte doplnit jednoznačnou identifikaci uživatele, třeba název účtu na GitHubu
+//const login = ""
+
+const response = await fetch('https://nakupy.czechitas.dev/api/mon', {
+  headers: {
+    Authorization: login
+  }
+});
+const list = await response.json();
 
 const HomePage = () => (
   <>
