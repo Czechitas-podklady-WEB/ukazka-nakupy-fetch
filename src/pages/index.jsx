@@ -23,6 +23,7 @@ const HomePage = () => (
         {list.map((item) => (
           <ShopItem 
             key={item.id}
+            id={item.id}
             name={item.product}
             amount={item.amount + ' ' + item.unit}
             bought={item.done}
